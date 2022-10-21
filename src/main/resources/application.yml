@@ -1,0 +1,16 @@
+minio:
+  endpoint: http://localhost:9000/
+  accessKey: minioadmin
+  secretKey: minioadmin
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
